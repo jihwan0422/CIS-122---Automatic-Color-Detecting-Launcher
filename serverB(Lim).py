@@ -64,7 +64,7 @@ while True:
             GPIO.output(17,True)
             data = 'light off!'
         else:
-            data = 'WTF!' 
+            data = 'Turn!' 
             client_sock.send(data)
         print ("sending [%s]" % data)
 
