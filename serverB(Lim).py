@@ -25,9 +25,9 @@ def read_temp():
         temp_f = temp_c * 9.0 / 5.0 + 32.0
         return temp_c
     
-#while True:
-#   print(read_temp())  
-#   time.sleep(1)
+while True:
+   print(read_temp())  
+   time.sleep(1)
 
 
 server_sock=BluetoothSocket( RFCOMM )
@@ -42,7 +42,7 @@ advertise_service( server_sock, "AquaPiServer",
                    service_id = uuid,
                    service_classes = [ uuid, SERIAL_PORT_CLASS ],
                    profiles = [ SERIAL_PORT_PROFILE ], 
-#                   protocols = [ OBEX_UUID ] 
+                   protocols = [ OBEX_UUID ] 
                     )
 while True:          
     print ("Waiting for connection on RFCOMM channel %d" % port)
