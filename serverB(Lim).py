@@ -36,7 +36,7 @@ server_sock.listen(1)
 
 port = server_sock.getsockname()[1]
 
-uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
+uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee" //Standard SerialPortService ID
 
 advertise_service( server_sock, "AquaPiServer",
                    service_id = uuid,
